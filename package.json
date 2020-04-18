@@ -7,17 +7,6 @@
     "lint": "standard --fix src/",
     "test": "jest"
   },
-  "lint-staged": {
-    "*.js": [
-      "standard --fix src/",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "devDependencies": {
     "husky": "^4.2.5",
     "jest": "^25.3.0",
