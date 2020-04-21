@@ -22,4 +22,10 @@ module.exports = class HttpRespose {
       body: new UnauthorizedError()
     }
   }
+
+  static ok() {
+    return {
+      statusCode: 200
+    }
+  }
 }
