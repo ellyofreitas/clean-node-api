@@ -23,9 +23,10 @@ module.exports = class HttpRespose {
     }
   }
 
-  static ok() {
+  static ok(body) {
     return {
-      statusCode: 200
+      statusCode: 200,
+      body
     }
   }
 }
