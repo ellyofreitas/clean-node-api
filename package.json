@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint --fix src/ --ext .js",
     "test": "jest --watch --silent --colors --noStackTrace",
-    "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace"
+    "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace",
+    "test:ci": "jest --coverage"
   },
   "devDependencies": {
     "@types/jest": "^25.2.1",
